@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="1008.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.signin.Controller">
+   <tabs>
+      <Tab text="Customers">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="cust_insert" layoutX="252.0" layoutY="41.0" mnemonicParsing="false" onAction="#InsertCust" prefHeight="25.0" prefWidth="102.0" text="Insert" />
+                  <TableView fx:id="cust_display" layoutX="252.0" layoutY="98.0" prefHeight="314.0" prefWidth="335.0">
+                     <columns>
+                     </columns>
+                  </TableView>
+                  <Button fx:id="cust_update" layoutX="368.0" layoutY="41.0" mnemonicParsing="false" onAction="#UpdateCust" prefHeight="25.0" prefWidth="102.0" text="Update" />
+                  <Button fx:id="cust_delete" layoutX="484.0" layoutY="41.0" mnemonicParsing="false" onAction="#RemoveCust" prefHeight="25.0" prefWidth="102.0" text="Delete" />
+                  <TextField fx:id="cust_name" layoutX="94.0" layoutY="86.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="cust_age" layoutX="94.0" layoutY="129.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="42.0" layoutY="45.0" prefHeight="17.0" prefWidth="32.0" text="ID" />
+                  <Label fx:id="cust_id" layoutX="95.0" layoutY="45.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label layoutX="42.0" layoutY="90.0" prefHeight="17.0" prefWidth="32.0" text="Name" />
+                  <Label layoutX="42.0" layoutY="133.0" prefHeight="17.0" prefWidth="32.0" text="Age" />
+                  <Label layoutX="42.0" layoutY="177.0" prefHeight="17.0" prefWidth="32.0" text="Date" />
+                  <TextField fx:id="cust_search" layoutX="684.0" layoutY="41.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Button fx:id="cust_filter" layoutX="829.0" layoutY="41.0" mnemonicParsing="false" onAction="#RefreshCust" prefHeight="25.0" prefWidth="116.0" text="Filter" />
+                  <Label layoutX="631.0" layoutY="45.0" prefHeight="17.0" prefWidth="32.0" text="Name" />
+                  <DatePicker fx:id="cust_date" layoutX="95.0" layoutY="173.0" prefHeight="25.0" prefWidth="132.0" />
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Auto">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="855.0">
+               <children>
+                  <Button fx:id="auto_insert" layoutX="252.0" layoutY="41.0" mnemonicParsing="false" onAction="#InsertAuto" prefHeight="25.0" prefWidth="102.0" text="Insert" />
+                  <TableView fx:id="auto_display" layoutX="252.0" layoutY="98.0" prefHeight="316.0" prefWidth="800.0">
+                     <columns>
+                     </columns>
+                  </TableView>
+                  <Button fx:id="auto_update" layoutX="368.0" layoutY="41.0" mnemonicParsing="false" onAction="#UpdateAuto" prefHeight="25.0" prefWidth="102.0" text="Update" />
+                  <Button fx:id="auto_delete" layoutX="484.0" layoutY="41.0" mnemonicParsing="false" onAction="#RemoveAuto" prefHeight="25.0" prefWidth="102.0" text="Delete" />
+                  <TextField fx:id="auto_make" layoutX="94.0" layoutY="41.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="auto_model" layoutX="94.0" layoutY="79.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="auto_year" layoutX="94.0" layoutY="116.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="14.0" prefHeight="17.0" prefWidth="32.0" text="ID" />
+                  <Label fx:id="auto_id" layoutX="95.0" layoutY="14.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label layoutX="28.0" layoutY="45.0" prefHeight="17.0" prefWidth="32.0" text="Make" />
+                  <Label layoutX="28.0" layoutY="83.0" prefHeight="17.0" prefWidth="38.0" text="Model" />
+                  <Label layoutX="28.0" layoutY="120.0" prefHeight="17.0" prefWidth="32.0" text="Year" />
+                  <TextField fx:id="auto_vin" layoutX="94.0" layoutY="152.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="156.0" prefHeight="17.0" prefWidth="32.0" text="VIN" />
+                  <TextField fx:id="auto_mile" layoutX="94.0" layoutY="186.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="190.0" prefHeight="17.0" prefWidth="58.0" text="MileagepY" />
+                  <TextField fx:id="auto_cov" layoutX="94.0" layoutY="221.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="225.0" prefHeight="17.0" prefWidth="53.0" text="Coverage" />
+                  <DatePicker fx:id="auto_start" layoutX="94.0" layoutY="295.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="299.0" prefHeight="17.0" prefWidth="32.0" text="Start" />
+                  <DatePicker fx:id="auto_end" layoutX="94.0" layoutY="332.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="336.0" prefHeight="17.0" prefWidth="32.0" text="End" />
+                  <TextField fx:id="auto_monthly" layoutX="94.0" layoutY="259.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="263.0" prefHeight="17.0" prefWidth="67.0" text="Monthly" />
+                  <TextField fx:id="auto_search2" layoutX="705.0" layoutY="57.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Button fx:id="auto_filter" layoutX="850.0" layoutY="57.0" mnemonicParsing="false" onAction="#RefreshAuto" prefHeight="25.0" prefWidth="116.0" text="Filter" />
+                  <Label layoutX="644.0" layoutY="61.0" prefHeight="17.0" prefWidth="48.0" text="Cust. ID" />
+                  <TextField fx:id="auto_search1" layoutX="705.0" layoutY="26.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="664.0" layoutY="30.0" prefHeight="17.0" prefWidth="28.0" text="VIN" />
+                  <TextField id="auto_end" fx:id="auto_cust_id" layoutX="94.0" layoutY="389.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="19.0" layoutY="393.0" prefHeight="17.0" prefWidth="71.0" text="Customer ID" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Home">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="855.0">
+               <children>
+                  <Button fx:id="home_insert" layoutX="252.0" layoutY="41.0" mnemonicParsing="false" onAction="#InsertHome" prefHeight="25.0" prefWidth="102.0" text="Insert" />
+                  <TableView fx:id="home_display" layoutX="252.0" layoutY="98.0" prefHeight="316.0" prefWidth="800.0">
+                     <columns>
+                     </columns>
+                  </TableView>
+                  <Button fx:id="home_update" layoutX="368.0" layoutY="41.0" mnemonicParsing="false" onAction="#UpdateHome" prefHeight="25.0" prefWidth="102.0" text="Update" />
+                  <Button fx:id="home_delete" layoutX="484.0" layoutY="41.0" mnemonicParsing="false" onAction="#RemoveHome" prefHeight="25.0" prefWidth="102.0" text="Delete" />
+                  <TextField fx:id="home_add" layoutX="94.0" layoutY="41.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="home_area" layoutX="94.0" layoutY="79.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="home_bed" layoutX="94.0" layoutY="116.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="14.0" prefHeight="17.0" prefWidth="32.0" text="ID" />
+                  <Label fx:id="home_id" layoutX="95.0" layoutY="14.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label layoutX="28.0" layoutY="45.0" prefHeight="17.0" prefWidth="51.0" text="Address" />
+                  <Label layoutX="28.0" layoutY="83.0" prefHeight="17.0" prefWidth="38.0" text="Area" />
+                  <Label layoutX="28.0" layoutY="120.0" prefHeight="17.0" prefWidth="32.0" text="#Bed" />
+                  <TextField fx:id="home_bath" layoutX="94.0" layoutY="152.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="156.0" prefHeight="17.0" prefWidth="32.0" text="#Bath" />
+                  <TextField fx:id="home_price" layoutX="94.0" layoutY="186.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="190.0" prefHeight="17.0" prefWidth="58.0" text="Price" />
+                  <TextField fx:id="home_cov" layoutX="94.0" layoutY="221.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="225.0" prefHeight="17.0" prefWidth="53.0" text="Coverage" />
+                  <DatePicker fx:id="home_end" layoutX="94.0" layoutY="328.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="332.0" prefHeight="17.0" prefWidth="32.0" text="End" />
+                  <DatePicker fx:id="home_start" layoutX="94.0" layoutY="292.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="296.0" prefHeight="17.0" prefWidth="67.0" text="Start" />
+                  <TextField fx:id="home_search1" layoutX="706.0" layoutY="26.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Button fx:id="home_filter" layoutX="852.0" layoutY="57.0" mnemonicParsing="false" onAction="#RefreshHome" prefHeight="25.0" prefWidth="116.0" text="Filter" />
+                  <Label layoutX="648.0" layoutY="61.0" prefHeight="17.0" prefWidth="55.0" text="Cust. ID" />
+                  <TextField fx:id="home_search2" layoutX="706.0" layoutY="57.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="644.0" layoutY="30.0" prefHeight="17.0" prefWidth="62.0" text="Address" />
+                  <TextField id="home_end" fx:id="home_cust_id" layoutX="94.0" layoutY="389.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="17.0" layoutY="393.0" prefHeight="17.0" prefWidth="87.0" text="Customer ID" />
+                  <TextField fx:id="home_monthly" layoutX="94.0" layoutY="256.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="260.0" prefHeight="17.0" prefWidth="53.0" text="Monthly" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Life">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="855.0">
+               <children>
+                  <Button fx:id="life_insert" layoutX="252.0" layoutY="41.0" mnemonicParsing="false" onAction="#InsertLife" prefHeight="25.0" prefWidth="102.0" text="Insert" />
+                  <TableView fx:id="life_display" layoutX="252.0" layoutY="98.0" prefHeight="316.0" prefWidth="480.0">
+                     <columns>
+                     </columns>
+                  </TableView>
+                  <Button fx:id="life_update" layoutX="368.0" layoutY="41.0" mnemonicParsing="false" onAction="#UpdateLife" prefHeight="25.0" prefWidth="102.0" text="Update" />
+                  <Button fx:id="life_delete" layoutX="484.0" layoutY="41.0" mnemonicParsing="false" onAction="#RemoveLife" prefHeight="25.0" prefWidth="102.0" text="Delete" />
+                  <TextField fx:id="life_con" layoutX="94.0" layoutY="41.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="life_cov" layoutX="94.0" layoutY="79.0" prefHeight="25.0" prefWidth="133.0" />
+                  <TextField fx:id="life_ben" layoutX="94.0" layoutY="116.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="14.0" prefHeight="17.0" prefWidth="32.0" text="ID" />
+                  <Label fx:id="life_id" layoutX="95.0" layoutY="14.0" prefHeight="17.0" prefWidth="36.0" />
+                  <Label layoutX="28.0" layoutY="45.0" prefHeight="17.0" prefWidth="51.0" text="Exist_con" />
+                  <Label layoutX="28.0" layoutY="83.0" prefHeight="17.0" prefWidth="59.0" text="Coverage" />
+                  <Label layoutX="28.0" layoutY="120.0" prefHeight="17.0" prefWidth="63.0" text="Beneficiary" />
+                  <TextField fx:id="life_monthly" layoutX="94.0" layoutY="152.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="156.0" prefHeight="17.0" prefWidth="53.0" text="Monthly" />
+                  <DatePicker fx:id="life_start" layoutX="94.0" layoutY="186.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="28.0" layoutY="190.0" prefHeight="17.0" prefWidth="58.0" text="Start" />
+                  <TextField fx:id="life_search1" layoutX="702.0" layoutY="26.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Button fx:id="life_filter" layoutX="850.0" layoutY="56.0" mnemonicParsing="false" onAction="#RefreshLife" prefHeight="25.0" prefWidth="116.0" text="Filter" />
+                  <Label layoutX="645.0" layoutY="60.0" prefHeight="17.0" prefWidth="69.0" text="Cust. ID" />
+                  <TextField fx:id="life_search2" layoutX="702.0" layoutY="56.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="631.0" layoutY="30.0" prefHeight="17.0" prefWidth="62.0" text="Beneficiary" />
+                  <TextField id="life_start" fx:id="life_cust_id" layoutX="94.0" layoutY="244.0" prefHeight="25.0" prefWidth="133.0" />
+                  <Label layoutX="16.0" layoutY="248.0" prefHeight="17.0" prefWidth="83.0" text="Customer ID" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>
